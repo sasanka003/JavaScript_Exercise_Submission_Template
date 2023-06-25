@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question 2</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+  <h1>Question 2</h1>
+  <a href="exercise01.html" class="back-button">Back</a>
+  
+  <div class="question-subpart">
+    <label for="subpart-select">Select Subpart:</label>
+    <select id="subpart-select" onchange="changeSubpart()">
+      <!-- Add your sub question for the dropdown list -->
+
+      <option value="2.01">Question 2.01</option>
+      <option value="2.02">Question 2.02</option>
+
+      <!-- <option value="2.03">Question 2.03</option>
+      <option value="2.04">Question 2.04</option> -->
+    </select>
+  </div>
+  
+  <textarea id="code" readonly></textarea>
+  <div id="output" class="console-output"></div>
+
+  <footer>
+    <p>Copyright (c) 2023 Sasanka Premaratne</p>
+  </footer>
+
+  <script src="../consoleOutput.js"></script>
+
+  <!-- Link your question 1 Javascript file here -->
+  <script src="question2.js"></script>
+
+</body>
+
+</html>
+

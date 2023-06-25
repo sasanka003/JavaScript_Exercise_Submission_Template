@@ -1,4 +1,4 @@
-<h1>Exercise Submission Webpage</h1>  [![GitHub license](https://badgen.net/badge/licence/MIT/blue)]
+<h1>Exercise Submission Webpage</h1>
 
 This repository provides a template for creating a JavaScript exercise submission webpage. Follow the instructions below to customize the webpage for your own exercise submission.<br>
 

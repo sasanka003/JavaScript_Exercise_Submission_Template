@@ -1,4 +1,4 @@
-<h1>Exercise Submission Webpage</h1>
+<h1>Exercise Submission Webpage</h1>  !\[my badge\](https://badgen.net/badge/licence/MIT/blue)
 
 This repository provides a template for creating a JavaScript exercise submission webpage. Follow the instructions below to customize the webpage for your own exercise submission.<br>
 

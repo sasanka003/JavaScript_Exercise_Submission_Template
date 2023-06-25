@@ -1,5 +1,4 @@
 <h1>Exercise Submission Webpage</h1>
-[![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)]([LICENSE](https://github.com/sasanka003/JavaScript_Exercise_Submission_Template/blob/main/LICENSE))
 
 This repository provides a template for creating a JavaScript exercise submission webpage. Follow the instructions below to customize the webpage for your own exercise submission.<br>
 

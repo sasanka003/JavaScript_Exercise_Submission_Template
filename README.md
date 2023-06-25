@@ -1,7 +1,5 @@
 <h1>Exercise Submission Webpage</h1>
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]([LICENSE](https://github.com/sasanka003/JavaScript_Exercise_Submission_Template/blob/main/LICENSE))
 
 This repository provides a template for creating a JavaScript exercise submission webpage. Follow the instructions below to customize the webpage for your own exercise submission.<br>
 

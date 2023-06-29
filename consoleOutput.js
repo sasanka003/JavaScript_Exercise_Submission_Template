@@ -1,27 +1,37 @@
-// Capture console.log output
 var consoleOutput = [];
 var originalConsoleLog = console.log;
 
 console.log = function() {
-var message = Array.from(arguments).map(convertToString).join(" ");
-consoleOutput.push(message);
-originalConsoleLog.apply(console, arguments);
+  var message = Array.from(arguments).map(convertToString).join(" ");
+  consoleOutput.push('<span class="log">' + message + '</span>');
+  originalConsoleLog.apply(console, arguments);
+  updateConsoleOutput();
 };
 
-// Update the <div> element with console output
+console.error = function() {
+  var message = Array.from(arguments).map(convertToString).join(" ");
+  consoleOutput.push('<span class="error">' + message + '</span>');
+  originalConsoleLog.apply(console, arguments);
+  updateConsoleOutput();
+};
+
 function updateConsoleOutput() {
-var consoleDiv = document.getElementById("output");
-consoleDiv.innerHTML = consoleOutput.join("<br>");
-consoleOutput.splice(0); // Clear the consoleOutput array
+  var consoleDiv = document.getElementById("output");
+  consoleDiv.innerHTML = consoleOutput.join(" ");
 }
 
-// Convert non-string values to string representation
 function convertToString(value) {
-if (typeof value === "string") {
+  if (typeof value === "string") {
     return value;
-} else if (typeof value === "object" && value !== null) {
+  } else if (typeof value === "object" && value !== null) {
     return JSON.stringify(value);
-} else {
+  } else {
     return String(value);
+  }
 }
-}
+
+window.onload = function() {
+  consoleOutput.splice(0);
+};
+
+

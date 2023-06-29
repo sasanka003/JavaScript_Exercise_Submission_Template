@@ -6,8 +6,8 @@ function question2(subpart) {
     switch (subpart) {
       case '2.01':
         code = `
-        //Your JavaScript code for question 2 part 1 goes here
-        console.log("Use console.log() method to print answer of the question 2 part 1.");
+        //Your JavaScript code to print an error goes here.
+        console.error("Use console.error() method to print an error.");
         `;
         break;
       case '2.02':
@@ -29,6 +29,7 @@ function question2(subpart) {
 
   // Function to handle subpart change
   function changeSubpart() {
+    consoleOutput.splice(0);
     const selectedSubpart = document.getElementById('subpart-select').value;
     question2(selectedSubpart);
     updateConsoleOutput();
